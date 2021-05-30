@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: aquamarine;
+        padding: 10px;
+        margin: 10px;
+        font-size: larger;
+      }
+
+      .container {
+        background-color: orange;
+        height: 300px;
+        width: 32%;
+        border-radius: 10px;
+        border: 4px solid black;
+     
+      }
+      .box {
+        display: flex;
+        flex-direction: row;
+      justify-content: space-between;
+      
+      }
+      .small1{
+          width: 25%;
+          background-color: chartreuse;
+          border: 4px solid black;
+          border-radius: 5px;
+          margin: 5px;
+          padding: 15px;
+      }
+      .bottom-row1{
+          display: flex;
+          justify-content: space-between;
+      }
+      .small2{
+          width: 17%;
+          background-color: lightpink;
+          border: 4px solid black;
+          border-radius: 5px;
+          margin: 0px;
+          padding: 15px;
+        }
+        .bottom-row2{
+          display: flex;
+          justify-content: space-between;
+        }
+        .sub-container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .sub-row1{
+            margin-top: 10px;
+            margin: 5px;
+            background-color: white;
+            width: 33%;
+            height: 60px;
+            border-radius: 5px;
+            border: 2px solid black;
+                }
+        .sub-row2{
+            margin-top: 10px;
+            margin: 5px;
+            background-color: white;
+            width: 25%;
+            height: 60px;
+            border-radius: 5px;
+            border: 2px solid black;
+                }
+        .sub-row3{
+            margin-top: 10px;
+            margin: 5px;
+            background-color: white;
+            width: 20%;
+            height: 60px;
+            border-radius: 5px;
+            border: 2px solid black;
+                }
+
+    </style>
+
+    <div class="box">
+      <div class="container" id="class">
+        1
+
+         <div class="sub-container">
+               <div class="sub-row1">1</div>
+               <div class="sub-row1">2</div>
+               <div class="sub-row1">3</div>
+           </div>
+           <div class="sub-container">
+               <div class="sub-row2">1</div>
+               <div class="sub-row2">2</div>
+               <div class="sub-row2">3</div>    
+               <div class="sub-row2">4</div>
+           </div>
+           <div class="sub-container">
+               <div class="sub-row3">1</div>
+               <div class="sub-row3">2</div>
+               <div class="sub-row3">3</div>
+               <div class="sub-row3">4</div>
+               <div class="sub-row3">5</div>
+           </div> 
+      </div>
+
+      <div class="container" id="class">2</div>
+      <div class="container" id="class">3</div>
+    </div>
+
+    <div class="bottom-row1">
+      <div class="small1">1</div>
+      <div class="small1">2</div>
+      <div class="small1">3</div>
+      <div class="small1">4</div>
+    </div>
+    <div class="bottom-row2">
+      <div class="small2">1</div>
+      <div class="small2">2</div>
+      <div class="small2">3</div>
+      <div class="small2">4</div>
+      <div class="small2">5</div>
+    </div>
+  </body>
+</html>
